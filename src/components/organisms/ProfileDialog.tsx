@@ -47,7 +47,7 @@ export default function ProfileDialog({ data, isOpen, onClose }: ProfileDialogPr
           {/* Foto circular */}
           <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-blue-100 mx-auto mb-4 shadow-lg">
             <img
-              src={data.animatedPhoto || data.photo}
+              src={data.photo}
               alt={data.name}
               className="w-full h-full object-cover object-top"
             />

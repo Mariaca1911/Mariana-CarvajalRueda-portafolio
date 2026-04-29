@@ -52,7 +52,6 @@ export interface ProfileData {
   title: string;
   profileSummary: string;
   photo: string;
-  animatedPhoto?: string; 
   contact: ContactInfo;
   languages: Language[];
   programmingLanguages: ProgrammingLanguage[];
@@ -60,6 +59,7 @@ export interface ProfileData {
   knowledges: Knowledge[];
   education: Education[];
   projects: Project[];
+  // Footer
   footerTitle: string;
   footerSubtitle: string;
   footerCopyright: string;

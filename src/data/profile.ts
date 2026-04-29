@@ -1,15 +1,17 @@
 import { ProfileData } from "@/types";
 
-
+/**
+ * Datos del portafolio de Mariana Carvajal Rueda.
+ * Actualiza este archivo con tu información real.
+ */
 export const profileData: ProfileData = {
   name: "Mariana Carvajal Rueda",
   title: "Desarrolladora Full Stack",
   profileSummary:
     "Estudiante de 7.° semestre de Ingeniería de Sistemas con experiencia en proyectos académicos y personales de desarrollo web full stack. He trabajado en la construcción de interfaces frontend y en la implementación de lógica backend conectada a bases de datos. Tengo conocimientos en Java y Python, y actualmente estoy fortaleciendo mis habilidades en React.",
 
-
+  // Reemplaza con la ruta de tu foto en /public
   photo: "/photo.png",
-  animatedPhoto: "/photo1.png",
 
   contact: {
     city: "Marinilla, Antioquia",
@@ -26,10 +28,10 @@ export const profileData: ProfileData = {
   ],
 
   programmingLanguages: [
-    { name: "Java",       percentage: 80 },
-    { name: "Python",     percentage: 80 },
+    { name: "Java",       percentage: 75 },
+    { name: "Python",     percentage: 70 },
     { name: "JavaScript", percentage: 65 },
-    { name: "React",      percentage: 60 },
+    { name: "React",      percentage: 55 },
     { name: "SQL",        percentage: 70 },
     { name: "HTML/CSS",   percentage: 80 },
   ],
@@ -85,7 +87,7 @@ export const profileData: ProfileData = {
     {
       id: "udea",
       institution: "Universidad de Antioquia",
-      period: "2023 a la  Actualidad",
+      period: "2023 – Actualidad",
       degree: "Ingeniería de Sistemas",
       description:
         "Estudiante de 7.° semestre. Desarrollo web full stack, bases de datos relacionales y no relacionales, APIs REST, Java, Python y React.",
@@ -96,7 +98,7 @@ export const profileData: ProfileData = {
       period: "2022 – 2024",
       degree: "Inglés C1",
       description:
-        "Certificación en inglés nivel C1. Comunicación técnica oral y escrita.",
+        "Certificación en inglés nivel C1 del Marco Común Europeo. Comunicación técnica oral y escrita.",
     },
   ],
 
@@ -104,8 +106,7 @@ export const profileData: ProfileData = {
     {
       id: "diverank",
       title: "DiveRank",
-      shortDescription:
-        "Plataforma web colaborativa para ranking y exploración de sitios de buceo a nivel mundial.",
+      shortDescription: "Plataforma web colaborativa para ranking y exploración de sitios de buceo a nivel mundial.",
       fullDescription:
         "DiveRank es una aplicación web full stack desarrollada en equipo que permite a los usuarios explorar, calificar y compartir sitios de buceo alrededor del mundo. Integra frontend y backend con base de datos relacional, operaciones CRUD completas y autenticación de usuarios.",
       image: "/projects/diverank.png",
@@ -115,8 +116,7 @@ export const profileData: ProfileData = {
     {
       id: "lifetracker",
       title: "LifeTracker",
-      shortDescription:
-        "Aplicación de bienestar personal para seguimiento de hábitos, salud y metas de vida.",
+      shortDescription: "Aplicación de bienestar personal para seguimiento de hábitos, salud y metas de vida.",
       fullDescription:
         "LifeTracker es una plataforma de bienestar que permite a los usuarios registrar y monitorear sus hábitos diarios, metas de salud y progreso personal. Desarrollada con arquitectura full stack, incluye backend con APIs REST, base de datos y una interfaz intuitiva de seguimiento.",
       image: "/projects/lifetracker.png",
@@ -126,10 +126,9 @@ export const profileData: ProfileData = {
     {
       id: "kaggle",
       title: "Proyecto Kaggle – Modelos 1",
-      shortDescription:
-        "Competencia Kaggle: análisis de datos y modelos predictivos de clasificación en Python.",
+      shortDescription: "Competencia Kaggle: análisis de datos y modelos predictivos de clasificación en Python.",
       fullDescription:
-        "Proyecto desarrollado como parte de una competencia en Kaggle. Aplica técnicas de análisis exploratorio de datos, preprocesamiento, entrenamiento de modelos de machine learning y evaluación de métricas para resolver un problema de predicción usando Python, scikit-learn y pandas.",
+        "Proyecto desarrollado como parte de una competencia en Kaggle. Aplica técnicas de análisis exploratorio de datos (EDA), preprocesamiento, entrenamiento de modelos de machine learning y evaluación de métricas para resolver un problema de predicción o clasificación usando Python y librerías como scikit-learn y pandas.",
       image: "/projects/kaggle.png",
       technologies: ["Python", "scikit-learn", "pandas", "Jupyter", "Kaggle"],
       githubUrl: "https://github.com/Mariaca1911/ProyectoKaggle-Modelos1",
@@ -137,14 +136,18 @@ export const profileData: ProfileData = {
     {
       id: "speechcommands",
       title: "Reconocimiento de Comandos de Voz",
-      shortDescription:
-        "Modelo de machine learning para reconocimiento de comandos de voz en tiempo real.",
+      shortDescription: "Modelo de machine learning para reconocimiento de comandos de voz en tiempo real.",
       fullDescription:
-        "Proyecto de reconocimiento de comandos de voz usando modelos de aprendizaje profundo. Implementa procesamiento de señales de audio, extracción de características (MFCC) y clasificación de comandos. Incluye reporte técnico con metodología, experimentos y resultados del modelo entrenado.",
+        "Proyecto de reconocimiento de comandos de voz usando modelos de aprendizaje profundo. Implementa procesamiento de señales de audio, extracción de características (MFCC) y clasificación de comandos. Incluye un reporte técnico detallado con metodología, experimentos y resultados del modelo entrenado.",
       image: "/projects/speechcommands.png",
       technologies: ["Python", "TensorFlow", "Librosa", "MFCC", "Jupyter"],
       githubUrl: "https://github.com/Lanza11/Proyecto-Modelo-Speech-Commands",
       liveUrl: "https://github.com/Lanza11/Proyecto-Modelo-Speech-Commands/blob/main/ReporteProyectoReconocimientoComandosDeVoz.pdf",
     },
   ],
+
+  // Footer
+  footerTitle: "Construyamos algo juntos ",
+  footerSubtitle: "Abierta a nuevas oportunidades y colaboraciones",
+  footerCopyright: "© 2026 Mariana Carvajal Rueda · Hecho con ❤️ en Medellín, Colombia",
 };

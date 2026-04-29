@@ -1,6 +1,10 @@
-
 import { Locale } from "@/types";
 
+/**
+ * Traducciones para la aplicación en español e inglés.
+ * Cada clave corresponde a un texto que se muestra en la interfaz,
+ * permitiendo cambiar el idioma de forma dinámica.
+ */
 export const translations: Record<Locale, {
   title: string;
   profileSummary: string;
@@ -48,10 +52,28 @@ export const translations: Record<Locale, {
     kaggle: { title: string; short: string; full: string };
     speechcommands: { title: string; short: string; full: string };
   };
-  
-/**
-  * Traducciones para la aplicación en español e inglés. Cada clave corresponde a un texto que se muestra en la interfaz, permitiendo cambiar el idioma de forma dinámica.
- */
+  // Bento
+  bentoSemester: string;
+  bentoSemesterDesc: string;
+  bentoFormacion: string;
+  bentoProjects: string;
+  bentoProjectsDesc: string;
+  bentoExperiencia: string;
+  bentoQuote: string;
+  bentoFilosofia: string;
+  bentoTechTitle: string;
+  bentoTechDesc: string;
+  bentoTech: string;
+  bentoLanguageTitle: string;
+  bentoLanguageDesc: string;
+  bentoIdiomas: string;
+  bentoInstitution: string;
+  bentoInstitutionDesc: string;
+  bentoInstLabel: string;
+  // Footer
+  footerTitle: string;
+  footerSubtitle: string;
+  footerCopyright: string;
 }> = {
   es: {
     title: "Desarrolladora Full Stack",
@@ -126,12 +148,9 @@ export const translations: Record<Locale, {
     bentoInstitution: 'Universidad de Antioquia',
     bentoInstitutionDesc: 'Medellín, Colombia · 2023 – Actualidad',
     bentoInstLabel: 'Institución',
-    
     footerTitle: "Construyamos algo juntos ",
     footerSubtitle: "Abierta a nuevas oportunidades y colaboraciones",
     footerCopyright: "© 2026 Mariana Carvajal Rueda · Hecho con ❤️ en Medellín, Colombia",
-
-
   },
   en: {
     title: "Full Stack Developer",
@@ -189,7 +208,6 @@ export const translations: Record<Locale, {
       kaggle: { title: "Kaggle Project – Models 1", short: "Kaggle competition: data analysis and predictive classification models in Python.", full: "Project developed as part of a Kaggle competition. Applies exploratory data analysis, preprocessing, machine learning model training and metric evaluation to solve a prediction problem using Python, scikit-learn and pandas." },
       speechcommands: { title: "Voice Command Recognition", short: "Machine learning model for real-time voice command recognition.", full: "Voice command recognition project using deep learning models. Implements audio signal processing, feature extraction (MFCC) and command classification. Includes a technical report with methodology, experiments and results of the trained model." },
     },
-
     bentoSemester: '7th Semester',
     bentoSemesterDesc: 'Systems Engineering · UdeA',
     bentoFormacion: 'Education',
@@ -207,7 +225,6 @@ export const translations: Record<Locale, {
     bentoInstitution: 'University of Antioquia',
     bentoInstitutionDesc: 'Medellín, Colombia · 2023 – Present',
     bentoInstLabel: 'Institution',
-
     footerTitle: "Let's build something together ",
     footerSubtitle: "Open to new opportunities and collaborations",
     footerCopyright: "© 2026 Mariana Carvajal Rueda · Made with ❤️ in Medellín, Colombia",

@@ -305,12 +305,12 @@ const MagicBento = ({
   const shouldDisableAnimations = disableAnimations || isMobile;
 
   const cardData = [
-    { color: '#EBF4FF', title: t.bentoSemester, description: t.bentoSemesterDesc, label: '🎓 ' + t.bentoFormacion },
-    { color: '#EBF4FF', title: t.bentoProjects, description: t.bentoProjectsDesc, label: '💼 ' + t.bentoExperiencia },
-    { color: '#EBF4FF', title: t.bentoQuote, description: '', label: '💡 ' + t.bentoFilosofia },
-    { color: '#EBF4FF', title: t.bentoTechTitle, description: t.bentoTechDesc, label: '⚙️ ' + t.bentoTech },
-    { color: '#EBF4FF', title: t.bentoLanguageTitle, description: t.bentoLanguageDesc, label: '🌎 ' + t.bentoIdiomas },
-    { color: '#EBF4FF', title: t.bentoInstitution, description: t.bentoInstitutionDesc, label: '🏛️ ' + t.bentoInstLabel },
+    { color: '#EBF4FF', title: t.bentoSemester, description: t.bentoSemesterDesc, label: ' ' + t.bentoFormacion },
+    { color: '#EBF4FF', title: t.bentoProjects, description: t.bentoProjectsDesc, label: ' ' + t.bentoExperiencia },
+    { color: '#EBF4FF', title: t.bentoQuote, description: '', label: ' '  },
+    { color: '#EBF4FF', title: t.bentoTechTitle, description: t.bentoTechDesc, label: ' ' + t.bentoTech },
+    { color: '#EBF4FF', title: t.bentoLanguageTitle, description: t.bentoLanguageDesc, label: ' ' + t.bentoIdiomas },
+    { color: '#EBF4FF', title: t.bentoInstitution, description: t.bentoInstitutionDesc, label: ' ' + t.bentoInstLabel },
   ];
 
   return (
