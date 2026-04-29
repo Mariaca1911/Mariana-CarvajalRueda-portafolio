@@ -58,7 +58,7 @@ export default function RightSidebar({ contact }: RightSidebarProps) {
   ];
 
   return (
-    <aside className="w-full md:w-12 md:min-w-[48px] bg-white border-l border-blue-50 flex flex-col items-center pt-5 pb-4 gap-3 sticky top-0 h-screen">
+    <aside className="w-12 min-w-[48px] bg-white border-l border-blue-50 flex flex-col items-center pt-5 pb-4 gap-3 sticky top-0 h-screen">
       {/* Etiqueta vertical */}
       <span className="text-[6px] text-gray-300 uppercase tracking-widest [writing-mode:vertical-rl] mb-2">
         Links

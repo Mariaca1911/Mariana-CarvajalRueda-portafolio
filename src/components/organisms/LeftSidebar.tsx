@@ -18,7 +18,7 @@ export default function LeftSidebar({ data }: LeftSidebarProps) {
   const { t } = useLocale();
 
   return (
-    <aside className="w-full md:w-80 md:min-w-[320px] bg-blue-800 flex flex-col sticky top-0 h-screen overflow-y-auto">
+    <aside className="w-80 min-w-[320px] bg-blue-800 flex flex-col sticky top-0 h-screen overflow-y-auto">
 
       {/* ── Perfil: foto y  nombre  */}
       <div className="bg-blue-600 px-4 pt-6 pb-5 text-center border-b border-blue-800">
