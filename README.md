@@ -48,7 +48,7 @@ src/
 │       ├── ProfileDialog.tsx # Diálogo del perfil
 │       └── ProjectDialog.tsx # Diálogo de detalle de proyectos
 ├── data/
-│   └── profile.ts        # Datos del portafolio (editar aquí)
+│   └── profile.ts        # Datos del portafolio 
 └── types/
     └── index.ts          # Definiciones de tipos TypeScript
 ```
@@ -88,41 +88,10 @@ npm start
 
 ---
 
-## Cómo personalizar
-
-Todos los datos del portafolio se centralizan en un solo archivo:
-
-```
-src/data/profile.ts
-```
-
-Edita ese archivo para cambiar nombre, foto, proyectos, educación, habilidades, etc. **No necesitas tocar ningún otro archivo** para actualizar el contenido.
-
-### Agregar tu foto
-
-1. Coloca tu foto en `/public/photo.jpg`
-2. El componente `LeftSidebar` la cargará automáticamente.
-
-### Agregar imágenes de proyectos
-
-1. Coloca las imágenes en `/public/projects/`
-2. Actualiza el campo `image` de cada proyecto en `profile.ts`.
-
----
 
 ## Despliegue en Vercel
 
-```bash
-# Instala Vercel CLI
-npm i -g vercel
 
-# Despliega
-vercel
-```
-
-El proyecto está configurado para desplegarse automáticamente en Vercel conectando el repositorio de GitHub.
-
-URL esperada: `mariana-carvajal.vercel.app`
 
 ---
 
@@ -136,8 +105,8 @@ El proyecto sigue la metodología **Atomic Design**:
 
 ---
 
-## Autora
+## Autor
 
 **Mariana Carvajal Rueda**  
 Estudiante de Ingeniería de Sistemas — Universidad de Antioquia  
-[LinkedIn](https://www.linkedin.com/in/mariana-carvajal-rueda-849462307/) · [GitHub](https://github.com/Mariaca1911)
+
