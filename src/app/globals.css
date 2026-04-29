@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Syne:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar personalizado para el portafolio */
+.scrollbar-thin::-webkit-scrollbar        { height: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track  { background: #E6F1FB; border-radius: 4px; }
+.scrollbar-thin::-webkit-scrollbar-thumb  { background: #378ADD; border-radius: 4px; }
+
+/* Scroll vertical del sidebar */
+aside::-webkit-scrollbar       { width: 3px; }
+aside::-webkit-scrollbar-track { background: transparent; }
+aside::-webkit-scrollbar-thumb { background: #185FA5; border-radius: 3px; }
+
+html, body {
+  height: 100%;
+  overflow: hidden; 
+}
+
+/* Tamaño base de fuente global */
+html {
+  font-size: 18px;
+}
