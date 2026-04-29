@@ -7,14 +7,14 @@ import MainContent from "@/components/organisms/MainContent";
  */
 export default function Home() {
   return (
-    <div className="flex h-screen overflow-hidden bg-blue-50/20">
-      {/* Columna izquierda — fija, con scroll interno */}
+    <div className="flex flex-col md:flex-row h-screen overflow-hidden bg-blue-50/20">
+      {/* Sidebar izquierdo */}
       <LeftSidebar data={profileData} />
 
-      {/* Columna central — scroll vertical */}
+      {/* Contenido central */}
       <MainContent data={profileData} />
 
-      {/* Columna derecha — fija, íconos de redes sociales */}
+      {/* Sidebar derecho */}
       <RightSidebar contact={profileData.contact} />
     </div>
   );
