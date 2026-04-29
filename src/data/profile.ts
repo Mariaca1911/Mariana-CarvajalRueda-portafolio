@@ -26,10 +26,10 @@ export const profileData: ProfileData = {
   ],
 
   programmingLanguages: [
-    { name: "Java",       percentage: 75 },
-    { name: "Python",     percentage: 70 },
+    { name: "Java",       percentage: 80 },
+    { name: "Python",     percentage: 80 },
     { name: "JavaScript", percentage: 65 },
-    { name: "React",      percentage: 55 },
+    { name: "React",      percentage: 60 },
     { name: "SQL",        percentage: 70 },
     { name: "HTML/CSS",   percentage: 80 },
   ],

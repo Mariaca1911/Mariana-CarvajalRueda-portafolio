@@ -68,13 +68,9 @@ export default function MainContent({ data }: MainContentProps) {
                 onClick={() => setProfileDialogOpen(true)}
                 className="inline-flex items-center gap-2 bg-blue-600 text-white rounded-full px-5 py-2 text-xs font-semibold hover:bg-blue-800 transition-colors duration-200"
               >
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <line x1="12" y1="8" x2="12" y2="12"/>
-                  <line x1="12" y1="16" x2="12.01" y2="16"/>
-                </svg>
-                {t.seeMore}
+               {t.seeMore}
               </button>
+            
 
               <a
                 href={"mailto:" + data.contact.email}
@@ -138,35 +134,23 @@ export default function MainContent({ data }: MainContentProps) {
         </section>
 
         {/* ── FOOTER ── */}
-        <footer className="bg-blue-800 px-6 py-5 text-center">
-          <p className="text-blue-200 text-xs font-display">{data.name}</p>
-          <p className="text-blue-400 text-[9px] mt-1">
-            Ingeniería de Sistemas · Universidad de Antioquia · 2025
+        <footer className="bg-blue-800 px-6 py-10 text-center">
+  
+          {/* Frase de cierre */}
+          <p className="text-lg font-display font-semibold text-white mb-2">
+            {t.footerTitle}
           </p>
-          <div className="flex justify-center gap-4 mt-3">
-            <a
-              href={data.contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-300 hover:text-blue-100 text-xs transition-colors"
-            >
-              LinkedIn
-            </a>
-            <a
-              href={data.contact.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-300 hover:text-blue-100 text-xs transition-colors"
-            >
-              GitHub
-            </a>
-            <a
-              href={"mailto:" + data.contact.email}
-              className="text-blue-300 hover:text-blue-100 text-xs transition-colors"
-            >
-              Correo
-            </a>
+          <p className="text-blue-300 text-sm mb-8">
+            {t.footerSubtitle}
+          </p>
+
+          {/* Copyright */}
+          <div className="border-t border-blue-700 pt-6">
+            <p className="text-blue-300 text-xs">
+              {t.footerCopyright}
+            </p>
           </div>
+
         </footer>
 
       </main>

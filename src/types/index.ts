@@ -60,4 +60,7 @@ export interface ProfileData {
   knowledges: Knowledge[];
   education: Education[];
   projects: Project[];
+  footerTitle: string;
+  footerSubtitle: string;
+  footerCopyright: string;
 }

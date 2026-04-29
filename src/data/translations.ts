@@ -1,3 +1,4 @@
+
 import { Locale } from "@/types";
 
 export const translations: Record<Locale, {
@@ -47,6 +48,10 @@ export const translations: Record<Locale, {
     kaggle: { title: string; short: string; full: string };
     speechcommands: { title: string; short: string; full: string };
   };
+  
+/**
+  * Traducciones para la aplicación en español e inglés. Cada clave corresponde a un texto que se muestra en la interfaz, permitiendo cambiar el idioma de forma dinámica.
+ */
 }> = {
   es: {
     title: "Desarrolladora Full Stack",
@@ -57,7 +62,7 @@ export const translations: Record<Locale, {
     extraSkills: "Habilidades extra",
     hello: "¡Hola! Soy",
     role: "Est. Ing. de Sistemas",
-    seeMore: "Ver más sobre mí",
+    seeMore: "Conoce más sobre mí",
     contactMe: "Contáctame",
     knowledge: "Conocimientos",
     knowledgeSubtitle: "Tecnologías y habilidades que aplico en mis proyectos de desarrollo.",
@@ -70,7 +75,7 @@ export const translations: Record<Locale, {
     semester: "Semestre",
     projects: "Proyectos",
     english: "Inglés",
-    quote: "\"Como desarrolladora Full Stack, más que escribir código, me enfoco en construir soluciones que conecten frontend y backend de manera eficiente, creando experiencias útiles, bien pensadas y con impacto real en quienes las usan.\"",
+    quote: "\"Más que escribir código, me gusta crear soluciones como desarrolladora Full Stack, uniendo frontend y backend para construir experiencias claras, funcionales y que realmente ayuden a las personas.\"",
     viewPortfolio: "Ver portafolio",
     downloadCV: "Descargar CV",
     viewOnGithub: "Ver en GitHub",
@@ -104,6 +109,29 @@ export const translations: Record<Locale, {
       kaggle: { title: "Proyecto Kaggle – Modelos 1", short: "Competencia Kaggle: análisis de datos y modelos predictivos de clasificación en Python.", full: "Proyecto desarrollado como parte de una competencia en Kaggle. Aplica técnicas de análisis exploratorio de datos, preprocesamiento, entrenamiento de modelos de machine learning y evaluación de métricas para resolver un problema de predicción usando Python, scikit-learn y pandas." },
       speechcommands: { title: "Reconocimiento de Comandos de Voz", short: "Modelo de machine learning para reconocimiento de comandos de voz en tiempo real.", full: "Proyecto de reconocimiento de comandos de voz usando modelos de aprendizaje profundo. Implementa procesamiento de señales de audio, extracción de características (MFCC) y clasificación de comandos. Incluye reporte técnico con metodología, experimentos y resultados del modelo entrenado." },
     },
+    bentoSemester: '7° Semestre',
+    bentoSemesterDesc: 'Ingeniería de Sistemas · UdeA',
+    bentoFormacion: 'Formación',
+    bentoProjects: '5+ Proyectos',
+    bentoProjectsDesc: 'Académicos y personales',
+    bentoExperiencia: 'Experiencia',
+    bentoQuote: '"Más que escribir código, me gusta crear soluciones como desarrolladora Full Stack, uniendo frontend y backend para construir experiencias claras, funcionales y que realmente ayuden a las personas."',
+    bentoFilosofia: 'Filosofía',
+    bentoTechTitle: 'Full Stack Developer',
+    bentoTechDesc: 'Java · Python · React · MySQL · PostgreSQL · MongoDB · APIs REST · Git · Postman · HTML · CSS · JavaScript',
+    bentoTech: 'Tecnologías',
+    bentoLanguageTitle: 'Inglés C1',
+    bentoLanguageDesc: 'Marco Común Europeo · Blendex 2022–2024',
+    bentoIdiomas: 'Idiomas',
+    bentoInstitution: 'Universidad de Antioquia',
+    bentoInstitutionDesc: 'Medellín, Colombia · 2023 – Actualidad',
+    bentoInstLabel: 'Institución',
+    
+    footerTitle: "Construyamos algo juntos ",
+    footerSubtitle: "Abierta a nuevas oportunidades y colaboraciones",
+    footerCopyright: "© 2026 Mariana Carvajal Rueda · Hecho con ❤️ en Medellín, Colombia",
+
+
   },
   en: {
     title: "Full Stack Developer",
@@ -114,7 +142,7 @@ export const translations: Record<Locale, {
     extraSkills: "Extra Skills",
     hello: "Hi! I'm",
     role: "Systems Eng. Student",
-    seeMore: "Learn more about me",
+    seeMore: "Know more about me",
     contactMe: "Contact me",
     knowledge: "Knowledge",
     knowledgeSubtitle: "Technologies and skills I apply in my development projects.",
@@ -127,7 +155,7 @@ export const translations: Record<Locale, {
     semester: "Semester",
     projects: "Projects",
     english: "English",
-    quote: "\"As a Full Stack developer, rather than writing code, I focus on building solutions that efficiently connect frontend and backend, creating useful, well-thought-out experiences with a real impact on those who use them.\"",
+    quote: "\"More than writing code, I enjoy creating solutions as a Full Stack developer, combining frontend and backend to build clear, functional experiences that truly help people.\"",
     viewPortfolio: "View portfolio",
     downloadCV: "Download CV",
     viewOnGithub: "View on GitHub",
@@ -161,5 +189,27 @@ export const translations: Record<Locale, {
       kaggle: { title: "Kaggle Project – Models 1", short: "Kaggle competition: data analysis and predictive classification models in Python.", full: "Project developed as part of a Kaggle competition. Applies exploratory data analysis, preprocessing, machine learning model training and metric evaluation to solve a prediction problem using Python, scikit-learn and pandas." },
       speechcommands: { title: "Voice Command Recognition", short: "Machine learning model for real-time voice command recognition.", full: "Voice command recognition project using deep learning models. Implements audio signal processing, feature extraction (MFCC) and command classification. Includes a technical report with methodology, experiments and results of the trained model." },
     },
+
+    bentoSemester: '7th Semester',
+    bentoSemesterDesc: 'Systems Engineering · UdeA',
+    bentoFormacion: 'Education',
+    bentoProjects: '5+ Projects',
+    bentoProjectsDesc: 'Academic and personal',
+    bentoExperiencia: 'Experience',
+    bentoQuote: '"More than writing code, I enjoy creating solutions as a Full Stack developer, combining frontend and backend to build clear, functional experiences that truly help people."',
+    bentoFilosofia: 'Philosophy',
+    bentoTechTitle: 'Full Stack Developer',
+    bentoTechDesc: 'Java · Python · React · MySQL · PostgreSQL · MongoDB · REST APIs · Git · Postman · HTML · CSS · JavaScript',
+    bentoTech: 'Technologies',
+    bentoLanguageTitle: 'English C1',
+    bentoLanguageDesc: 'Common European Framework · Blendex 2022–2024',
+    bentoIdiomas: 'Languages',
+    bentoInstitution: 'University of Antioquia',
+    bentoInstitutionDesc: 'Medellín, Colombia · 2023 – Present',
+    bentoInstLabel: 'Institution',
+
+    footerTitle: "Let's build something together ",
+    footerSubtitle: "Open to new opportunities and collaborations",
+    footerCopyright: "© 2026 Mariana Carvajal Rueda · Made with ❤️ in Medellín, Colombia",
   },
 };

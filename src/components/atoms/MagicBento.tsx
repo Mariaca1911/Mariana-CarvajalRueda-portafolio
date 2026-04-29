@@ -1,51 +1,17 @@
+/**
+ * Uso de GSAP para crear un efecto de partículas y spotlight en las tarjetas del MagicBento.
+ */
 "use client";
 
 import { useRef, useEffect, useCallback, useState } from 'react';
 import { gsap } from 'gsap';
+import { useLocale } from '@/context/LocaleContext';
 import './MagicBento.css';
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
-const DEFAULT_GLOW_COLOR = '37, 99, 235';
+const DEFAULT_GLOW_COLOR = '24, 95, 165';
 const MOBILE_BREAKPOINT = 768;
-
-const cardData = [
-  {
-    color: '#EBF4FF',
-    title: '7° Semestre',
-    description: 'Ingeniería de Sistemas · UdeA',
-    label: 'Formación'
-  },
-  {
-    color: '#EBF4FF',
-    title: '5+ Proyectos',
-    description: 'Académicos y personales',
-    label: 'Experiencia'
-  },
-  {
-    color: '#EBF4FF',
-    title: '"Apasionada por conectar el frontend con el backend de forma limpia y eficiente."',
-    description: '',
-  },
-  {
-    color: '#EBF4FF',
-    title: 'Full Stack Developer',
-    description: 'Java · Python · React · MySQL · PostgreSQL · MongoDB · APIs REST · Git · Postman · HTML · CSS · JavaScript',
-    label: 'Tecnologías'
-  },
-  {
-    color: '#EBF4FF',
-    title: 'Inglés C1',
-    description: 'Marco Común Europeo · Blendex 2022–2024',
-    label: 'Idiomas'
-  },
-  {
-    color: '#EBF4FF',
-    title: 'Universidad de Antioquia',
-    description: 'Medellín, Colombia · 2023 – Actualidad',
-    label: 'Institución'
-  }
-];
 
 const createParticleElement = (x, y, color = DEFAULT_GLOW_COLOR) => {
   const el = document.createElement('div');
@@ -293,9 +259,20 @@ const MagicBento = ({
   clickEffect = true,
   enableMagnetism = true
 }) => {
+  const { t } = useLocale();
   const gridRef = useRef(null);
   const isMobile = useMobileDetection();
   const shouldDisableAnimations = disableAnimations || isMobile;
+
+  // cardData usa las traducciones del idioma activo
+  const cardData = [
+    { color: '#EBF4FF', title: t.bentoSemester, description: t.bentoSemesterDesc, label: ' ' + t.bentoFormacion },
+    { color: '#EBF4FF', title: t.bentoProjects, description: t.bentoProjectsDesc, label: ' ' + t.bentoExperiencia },
+    { color: '#EBF4FF', title: t.bentoQuote, description: '', label: ' '  },
+    { color: '#EBF4FF', title: t.bentoTechTitle, description: t.bentoTechDesc, label: ' ' + t.bentoTech },
+    { color: '#EBF4FF', title: t.bentoLanguageTitle, description: t.bentoLanguageDesc, label: ' ' + t.bentoIdiomas },
+    { color: '#EBF4FF', title: t.bentoInstitution, description: t.bentoInstitutionDesc, label: ' ' + t.bentoInstLabel },
+  ];
 
   return (
     <>

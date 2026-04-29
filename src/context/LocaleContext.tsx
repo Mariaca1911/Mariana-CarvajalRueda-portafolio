@@ -1,3 +1,7 @@
+
+/**
+ Hace posible el cambio de idioma en toda la aplicación. Proporciona el contexto de idioma y las traducciones a los componentes que lo consumen.
+ */
 "use client";
 
 import { createContext, useContext, useState, ReactNode } from "react";

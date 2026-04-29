@@ -1,3 +1,6 @@
+/**
+ * Uso de GSAP para crear un efecto de partículas y spotlight en las tarjetas del MagicBento.
+ */
 :root {
   --purple-primary: rgba(24, 95, 165, 1);
   --purple-glow: rgba(24, 95, 165, 0.2);
