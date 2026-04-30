@@ -8,7 +8,8 @@ import SkillBar from "@/components/atoms/SkillBar";
 import SkillPill from "@/components/atoms/SkillPill";
 
 /**
- * LeftSidebar — panel lateral izquierdo fijo.
+ * LeftSidebar — panel lateral izquierdo fijo en desktop.
+ * En móvil se apila verticalmente sobre el contenido central.
  */
 interface LeftSidebarProps {
   data: ProfileData;
@@ -20,7 +21,7 @@ export default function LeftSidebar({ data }: LeftSidebarProps) {
   return (
     <aside className="w-full md:w-80 md:min-w-[320px] bg-blue-800 flex flex-col md:sticky md:top-0 md:h-screen md:overflow-y-auto">
 
-      {/* ── Perfil: foto y  nombre  */}
+      {/* ── Perfil: foto + nombre ── */}
       <div className="bg-blue-600 px-4 pt-6 pb-5 text-center border-b border-blue-800">
         <div className="relative w-16 h-16 rounded-full mx-auto mb-3 border-2 border-blue-100 overflow-hidden bg-blue-100">
           <Image
@@ -32,8 +33,6 @@ export default function LeftSidebar({ data }: LeftSidebarProps) {
               (e.target as HTMLImageElement).style.display = "none";
             }}
           />
-          {/* Fallback de iniciales */}
-          
         </div>
         <h1 className="text-blue-50 text-base font-display font-semibold leading-tight">
           {data.name}
@@ -42,7 +41,8 @@ export default function LeftSidebar({ data }: LeftSidebarProps) {
       </div>
 
       {/* ── Bloques de información ── */}
-      <div className="flex flex-col gap-3 p-3 flex-1">
+      {/* En móvil: grid de 2 columnas. En desktop: columna única */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-col gap-3 p-3 flex-1">
 
         {/* Contacto */}
         <SidebarBlock title={t.contact}>
@@ -53,7 +53,7 @@ export default function LeftSidebar({ data }: LeftSidebarProps) {
           <ContactRow icon="github"   text="GitHub"   href={data.contact.github} />
         </SidebarBlock>
 
-        {/* Idiomas — usa lista traducida */}
+        {/* Idiomas */}
         <SidebarBlock title={t.languages}>
           {t.languagesList.map((lang) => (
             <SkillBar key={lang.name} label={lang.name} percentage={lang.percentage} />
@@ -67,7 +67,7 @@ export default function LeftSidebar({ data }: LeftSidebarProps) {
           ))}
         </SidebarBlock>
 
-        {/* Habilidades extra — usa lista traducida */}
+        {/* Habilidades extra */}
         <SidebarBlock title={t.extraSkills}>
           <div className="flex flex-wrap">
             {t.extraSkillsList.map((skill) => (

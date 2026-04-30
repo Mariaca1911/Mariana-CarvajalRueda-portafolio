@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Scrollbar personalizado para el portafolio */
+/* Scrollbar personalizado para el portafolio horizontal */
 .scrollbar-thin::-webkit-scrollbar        { height: 4px; }
 .scrollbar-thin::-webkit-scrollbar-track  { background: #E6F1FB; border-radius: 4px; }
 .scrollbar-thin::-webkit-scrollbar-thumb  { background: #378ADD; border-radius: 4px; }
@@ -18,16 +18,17 @@ html, body {
   height: 100%;
 }
 
-/* Desktop: sin scroll global, el scroll lo maneja el área central */
+/* Desktop: el scroll lo maneja el área central */
 @media (min-width: 768px) {
   html, body {
     overflow: hidden;
   }
 }
 
-/* Móvil: scroll global */
+/* Móvil: scroll global vertical */
 @media (max-width: 767px) {
   html, body {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }

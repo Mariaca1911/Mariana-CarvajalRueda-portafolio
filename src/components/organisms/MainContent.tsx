@@ -32,7 +32,7 @@ export default function MainContent({ data }: MainContentProps) {
 
   return (
     <>
-      <main className="flex-1 bg-blue-50/30 md:overflow-y-auto">
+      <main className="w-full flex-1 bg-blue-50/30 md:overflow-y-auto">
 
         {/* ── SECCIÓN PERFIL / HERO ── */}
         <section className="bg-white border-b border-blue-50 px-4 md:px-6 py-0 flex items-stretch min-h-[180px] md:min-h-[220px]">
