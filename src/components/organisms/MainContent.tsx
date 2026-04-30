@@ -32,10 +32,10 @@ export default function MainContent({ data }: MainContentProps) {
 
   return (
     <>
-      <main className="flex-1 bg-blue-50/30 overflow-y-auto">
+      <main className="flex-1 bg-blue-50/30 md:overflow-y-auto">
 
         {/* ── SECCIÓN PERFIL / HERO ── */}
-        <section className="bg-white border-b border-blue-50 px-6 py-0 flex items-stretch min-h-[220px]">
+        <section className="bg-white border-b border-blue-50 px-4 md:px-6 py-0 flex items-stretch min-h-[180px] md:min-h-[220px]">
 
           {/* Contenido izquierdo: nombre, descripción y botones */}
           <div className="flex-1 py-7 pr-6">
@@ -97,7 +97,7 @@ export default function MainContent({ data }: MainContentProps) {
         </section>
 
         {/* ── SECCIÓN CONOCIMIENTOS ── */}
-        <section className="px-6 py-7 bg-white border-b border-blue-50">
+        <section className="px-4 md:px-6 py-5 md:py-7 bg-white border-b border-blue-50">
           <SectionHeader title={t.knowledge} subtitle={t.knowledgeSubtitle} />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {data.knowledges.map((k) => (
@@ -107,7 +107,7 @@ export default function MainContent({ data }: MainContentProps) {
         </section>
 
         {/* ── SECCIÓN EDUCACIÓN ── */}
-        <section className="px-6 py-7 bg-blue-50/40 border-b border-blue-50">
+        <section className="px-4 md:px-6 py-5 md:py-7 bg-blue-50/40 border-b border-blue-50">
           <SectionHeader title={t.education} />
           <div className="bg-white rounded-xl border border-blue-50 px-5 py-2">
             {data.education.map((edu) => (
@@ -117,7 +117,7 @@ export default function MainContent({ data }: MainContentProps) {
         </section>
 
         {/* ── SECCIÓN PORTAFOLIO ── */}
-        <section id="portfolio" className="px-6 py-7 bg-white border-b border-blue-50">
+        <section id="portfolio" className="px-4 md:px-6 py-5 md:py-7 bg-white border-b border-blue-50">
           <SectionHeader title={t.portfolio} subtitle={t.portfolioSubtitle} />
           {/* Scroll horizontal de tarjetas */}
           <div className="flex gap-4 overflow-x-auto pb-4" style={{ overflowX: "scroll" }}>

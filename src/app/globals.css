@@ -16,10 +16,18 @@ aside::-webkit-scrollbar-thumb { background: #185FA5; border-radius: 3px; }
 
 html, body {
   height: 100%;
-  overflow: hidden; 
 }
 
-/* Tamaño base de fuente global */
-html {
-  font-size: 18px;
+/* Desktop: sin scroll global, el scroll lo maneja el área central */
+@media (min-width: 768px) {
+  html, body {
+    overflow: hidden;
+  }
+}
+
+/* Móvil: scroll global */
+@media (max-width: 767px) {
+  html, body {
+    overflow: auto;
+  }
 }

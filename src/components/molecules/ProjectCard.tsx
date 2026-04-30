@@ -22,7 +22,7 @@ export default function ProjectCard({ project, onLearnMore, learnMoreLabel }: Pr
   const translated = t.project_items[project.id as keyof typeof t.project_items];
 
   return (
-    <div className="flex-shrink-0 w-96 bg-white border border-blue-50 rounded-xl overflow-hidden hover:border-blue-200 hover:shadow-md transition-all duration-200">
+    <div className="flex-shrink-0 w-72 sm:w-80 md:w-96 bg-white border border-blue-50 rounded-xl overflow-hidden hover:border-blue-200 hover:shadow-md transition-all duration-200">
 
       {/* Imagen del proyecto */}
       <div className="h-44 overflow-hidden">
